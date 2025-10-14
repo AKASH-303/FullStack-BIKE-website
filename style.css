@@ -1,0 +1,60 @@
+body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .cart-item-enter {
+            animation: slideIn 0.3s ease-out forwards;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* --- Carousel Styles --- */
+        .carousel-container {
+            height: 65vh;
+        }
+
+        .carousel-track {
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-slide {
+            flex: 0 0 100%;
+        }
+
+        .carousel-dot.active {
+            background-color: rgb(196, 219, 138);
+            transform: scale(1.05);
+        }
+
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 3px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #faf8f8;
+        }
+
+        .dark ::-webkit-scrollbar-track {
+            background: #99acd3;
+            /* dark:bg-gray-700 */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #c0ce95;
+            border-radius: 3px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
